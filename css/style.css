@@ -1,0 +1,121 @@
+/* Main */
+#container {
+  width: 400px;
+  margin: auto;
+	height: 700px;
+}
+h1 {
+  text-align: center;
+	font-family: 'Graduate', cursive;
+	font-size: 2.5em;
+	text-transform: uppercase;
+	color: #00ae09;
+}
+
+/* Settings */
+#settings {
+	font-family: 'Fira Mono', monospace;
+}
+#settings h4 {
+	text-transform: uppercase;
+	margin: 0;
+}
+#settings span {
+  display: block;
+}
+
+#settings #settingBreak, #settings #settingSession {
+  float: left;
+  width: 50%;
+  text-align: center;
+}
+
+#settings input {
+	width: 90%;
+}
+/* timer - thanks to the tutorial - http://blog.pu-gh.com/2014/09/30/drawing-rings-with-css/ */
+#timerProgress {
+  height: 300px;
+	width: 300px;
+  border: 1px #ffffff solid;; /*Somehow need the border to make the ring show */
+  text-align: center;
+  position: relative;
+	margin-left: auto;
+  margin-right: auto;
+  overflow: auto;
+  cursor: pointer;
+	font-family: 'Fira Mono', monospace;
+}
+#timerProgress #backCircle {
+	position: absolute;
+	background-color: #FFFFFF;
+	-webkit-box-shadow:inset 0 0 4px 0 #C4C4C4;
+	box-shadow:inset 0 0 4px 0 #C4C4C4;
+	width: calc(100% - 40px);
+	height: calc(100% - 40px);
+	top: 20px;
+	left: 20px;
+	border-radius: 50%;
+	overflow: hidden;
+}
+
+#timerProgress .frontCircle {
+	position: absolute;
+	background-color: #ffffff;
+	width: calc(100% - 70px);
+	height: calc(100% - 70px);
+	top: 35px;
+	left: 35px;
+	border-radius: 50%;
+	-webkit-box-shadow: 0 0 4px 0 #e1e0e0;
+	box-shadow: 0 0 4px 0 #e1e0e0;
+}
+
+.squares {
+  position: absolute;
+  width: 10px;
+  height: 140px;
+  left: 50%;
+  bottom: 50%;
+  -webkit-transform-origin: bottom center;
+	-ms-transform-origin: bottom center;
+	transform-origin: bottom center;
+}
+
+#timer, #currentPhrase {
+  font-size: 2.7em;
+  color: #5c5c5c;
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  top: 80px;
+	text-transform: uppercase;
+}
+#timer {
+  font-size: 3.7em;
+  top: 140px;
+	color: #7200ff;
+}
+
+#resetBtn {
+	width: 160px;
+	height: 50px;
+	position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+	border-radius: 5px;
+	border: 2px solid #dddddd;
+	background-color: #e8e8e8;
+	font-size: 1em;
+	text-transform: uppercase;
+}
+
+#resetBtn:hover {
+	background-color: #7200ff;
+	color: #ffffff;
+	border: none;
+}

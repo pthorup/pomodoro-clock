@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>Pomodora Clock</title>
+  <link href="https://fonts.googleapis.com/css?family=Fira+Mono|Graduate" rel="stylesheet"> 
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+
+  
+      <link rel="stylesheet" href="css/style.css">
+
+  
+</head>
+
+<body>
+  <div id="container">
+  <h1>Pomodora Clock</h1>
+  <div id="settings">
+    <div id="settingBreak">
+      <h4>Set Break</h4>
+      <input type="range" id="breakDuration" value="1" min="1" max="120" oninput=setAllDuration()>
+      <span id="breakValue"></span>
+    </div>
+    <div id="settingSession">
+      <h4>Set Session</h4>
+      <input type="range" id="sessionDuration" value="1" min="1" max="120" oninput=setAllDuration()>
+      <span id="sessionValue"></span>
+    </div>
+  </div>
+  <div id="timerProgress" onclick=setTimer()>
+    <div id="backCircle"></div>
+    <div class="frontCircle"></div>
+    <span id="currentPhrase"></span>
+    <span id="timer"></span>
+  </div>
+	<button id="resetBtn" onclick=clearSettings()>Reset</button>
+</div>
+  
+    <script src="js/index.js"></script>
+
+</body>
+</html>
