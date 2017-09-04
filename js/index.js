@@ -126,8 +126,8 @@ function stopTimer(){
 }
 
 function clearSettings(){
-	document.getElementById("sessionDuration").value = 1;
-	document.getElementById("breakDuration").value = 1;
+	document.getElementById("sessionDuration").value = 25;
+	document.getElementById("breakDuration").value = 5;
 	setAllDuration();	
 }
 
